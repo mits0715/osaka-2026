@@ -27,13 +27,12 @@ button,a{-webkit-tap-highlight-color:transparent}
 <body>
 <div id="top" style="width: 100%; min-height: 100vh; background: #FCFAFF; display: flex; justify-content: center">
 <div style="width: 100%; max-width: 480px; display: flex; flex-direction: column">
-
 <header style="position: relative; overflow: hidden; background: #FFF7FA; padding: calc(40px + env(safe-area-inset-top,0px)) 24px 26px; display: flex; flex-direction: column; gap: 14px; border-radius: 0 0 36px 36px">
 <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%"><circle cx="360" cy="40" r="86" fill="#FFD9E4"></circle><circle cx="300" cy="150" r="46" fill="#D6E8FF"></circle><circle cx="30" cy="290" r="70" fill="#D5F2E3"></circle><circle cx="385" cy="250" r="30" fill="#E9E1FB"></circle></svg>
 <div style="position: relative; display: flex; flex-direction: column; gap: 14px">
 <div style="font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: #9C3A5E">OSAKA GIRLS TRIP</div>
 <h1 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 34px; line-height: 1.35; color: #3E3350">大阪 2泊3日<br>旅のしおり</h1>
-<div style="font-size: 15px; line-height: 1.7; color: #4A3F57">2026年10月3日（土）〜10月5日（月）<br>伊丹 10:00着 ／ 伊丹 19:00ごろ発</div>
+<div style="font-size: 15px; line-height: 1.7; color: #4A3F57">2026年10月3日（土）〜10月5日（月）<br>伊丹 9:10着 ／ 伊丹 19:40発</div>
 <nav aria-label="日程の切り替え" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-top: 6px">
 <button type="button" class="daybtn" data-go="1" aria-pressed="true"><span style="font-size: 15px; font-weight: 700">1日目</span><span style="font-size: 12px">10/3 土</span></button>
 <button type="button" class="daybtn" data-go="2" aria-pressed="false"><span style="font-size: 15px; font-weight: 700">2日目</span><span style="font-size: 12px">10/4 日</span></button>
@@ -41,24 +40,40 @@ button,a{-webkit-tap-highlight-color:transparent}
 </nav>
 </div>
 </header>
-
 <div class="day" data-day="1">
 <section style="padding: 32px 20px 8px; display: flex; flex-direction: column; gap: 8px">
 <div style="align-self: flex-start; background: #FFC9DA; color: #3E3350; font-size: 12px; letter-spacing: 0.16em; font-weight: 700; padding: 6px 14px; border-radius: 999px">DAY 1 ・ 10/3 SAT</div>
 <h2 style="margin: 4px 0 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 26px; line-height: 1.45; color: #3E3350">熟成ステーキと道頓堀、<br>夜は光の植物園へ</h2>
-<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">なんばを拠点に食べ歩き、夕方は粉浜で担担麺。19時からチームラボ ボタニカルガーデンを楽しんで、USJ近くのホテルへ。</p>
+<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">朝のすいている道頓堀で写真を撮ってからランチ。夕方は粉浜で担担麺、19時からチームラボ ボタニカルガーデンへ。</p>
 </section>
 <section style="margin: 12px 20px 8px; background: #FFF0F5; border-radius: 22px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 14px; font-weight: 700; color: #9C3A5E">この日のポイント</div>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>なんばで大きめのコインロッカーを確保。夕方に買うパンも一緒に入れます</li><li>BaFITは予約不可・11席。17:00ちょうどに着くのが勝負</li><li>ステーキの後に担担麺があるので、昼のごはんは控えめに</li></ul>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>伊丹空港 9:10着。リムジンバスは9:30発に乗れればベスト（乗り遅れても9:50発あり）</li><li>この日は伊丹空港で「空の日エアポートフェスティバル」開催。空港が混むかもしれないので早めに移動</li><li>BaFITは予約不可・11席。17:00ちょうどに着くのが勝負</li><li>この旅の電車・バスはすべてSuicaで乗れます（緑の「Suica OK」マーク）。この日の交通費は大人1人 約2,190円（粉浜→長居を電車で移動した場合）。残高は多めにチャージしておくと安心</li></ul>
 </section>
 <section style="padding: 20px 20px 16px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; gap: 12px">
-<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">10:00</div>
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">9:10</div>
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">ARRIVAL</div>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">伊丹空港 到着 → リムジンバスでなんばへ</h3>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>10:30ごろのバスに乗車、なんば着は11:15ごろ</li><li>電車は乗り換えが多く時間もかかるので、バスが楽</li><li>着いたらコインロッカーへ荷物を預ける</li></ul>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">伊丹空港 到着</h3>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>荷物を受け取って到着ロビーへ</li><li>外のバスのりばへ向かい、<b style="color:#3E3350">10番のりば（なんば駅前／JR難波駅（OCAT）行き）</b>を探す</li><li>Suicaがあれば乗車券は不要。そのままバスに乗れます（Suicaがない人は券売機で購入、大人730円）</li></ul>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">9:30</div>
+<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>リムジンバスでなんばへ（約30分）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK（乗車時に車内の読み取り機にタッチ）</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 730円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px"><b style="color:#3E3350">9:30発</b>の「なんば駅前」行きに乗車（次は9:50発）</li><li style="padding-left: 4px">予約不要・先着順。大きい荷物はバスのトランクへ</li><li style="padding-left: 4px"><b style="color:#3E3350">終点「なんば駅前」</b>で降車（10:00ごろ着）。Osaka Metroなんばビル前、御堂筋線6・7番出口の地上です</li><li style="padding-left: 4px">近くのコインロッカーに大きめの荷物を預ける（夕方に買うパンもあとで入れます）</li></ol><div style="margin-top: 8px; font-size: 12.5px; line-height: 1.7; color: #5B4F66">9:30発に間に合わないときは9:50発（なんば駅前 10:20着）でも予定どおり回れます</div>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">10:30</div>
+<div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">WALK ＆ PHOTO</div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">道頓堀散策（朝のすいている時間に撮影）</h3>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>なんば駅前から御堂筋沿いを北へ徒歩5分ほどで戎橋へ</li><li>戎橋からグリコの看板、くいだおれ太郎の前で記念撮影</li><li>カニやフグの巨大看板が並ぶ通りをぶらぶら</li><li>浮世小路を抜けて法善寺横丁へ。落ち着いた雰囲気の写真も</li></ul>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=道頓堀+グリコサイン" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
 <div style="display: flex; gap: 12px">
@@ -66,7 +81,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">LUNCH</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">0℃熟成ステーキ 本店</h3>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>名物の熟成ステーキ。0℃で熟成させた濃厚で柔らかいお肉</li><li>英語・中国語・韓国語メニューあり</li><li>開店直後に入って待ち時間を短く</li></ul>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>道頓堀から千日前方面へ徒歩5分</li><li>名物の熟成ステーキ。0℃で熟成させた濃厚で柔らかいお肉</li><li>英語・中国語・韓国語メニューあり。開店直後に入って待ち時間を短く</li></ul>
 <div style="background: #FFF4F7; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市中央区千日前1-8-18 創食ビル1F（なんば駅 徒歩4分）<br>ランチ 11:30〜15:00（L.O.14:30）・火曜定休</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=0℃熟成ステーキ+本店+千日前" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
@@ -74,10 +89,10 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="display: flex; gap: 12px">
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">13:00</div>
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">WALK ＆ PHOTO</div>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">道頓堀散策＆たこ焼き食べ歩き</h3>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>グリコの看板・くいだおれ太郎の前で記念撮影</li><li>カニやフグの巨大看板が並ぶ通りをぶらぶら</li><li>浮世小路を抜けて法善寺横丁へ。落ち着いた雰囲気の写真も</li><li>たこ焼きは1舟をシェア。踊りだこ、くくる本店の「びっくりたこ焼」など</li></ul>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=道頓堀+グリコサイン" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
+<div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">TAKOYAKI ＆ SHOPPING</div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">踊りだこ 道頓堀店でたこ焼き＆お買い物</h3>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>たこ焼きは踊りだこで。ステーキの後なので1舟をシェア</li><li>道頓堀店が混んでいたら、心斎橋PARCO地下2階「ネオン食堂街」の店舗へ</li><li>食べ終わったら心斎橋筋商店街でお買い物</li></ul>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=踊りだこ+道頓堀店" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
 <div style="display: flex; gap: 12px">
@@ -86,7 +101,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">CAFE</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">MACCHA HOUSE 抹茶館 なんばウォーク店</h3>
 <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>升の器に入った宇治抹茶ティラミスで写真を</li><li>ほうじ茶ティラミスもあり。京都の老舗「森半」の抹茶</li><li>先にレジで注文・支払い → 番号で呼ばれたら受け取り</li></ul>
-<div style="background: #FFF4F7; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市中央区千日前2-1-15 なんばウォーク2番街<br>10:00〜22:00</div>
+<div style="background: #FFF4F7; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市中央区千日前2-1-15 なんばウォーク2番街（地下街）<br>10:00〜22:00</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=MACCHA+HOUSE+抹茶館+なんばウォーク" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
@@ -95,14 +110,18 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">TAKEOUT</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">SAKImoto Bakery 大阪初號本店</h3>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>2日目の朝ごはん用に高級食パンを購入</li><li>閉店前に買えるよう、この時間に立ち寄り</li><li>買ったパンはコインロッカーの荷物と一緒に</li></ul>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>2日目の朝ごはん用に高級食パンを購入</li><li>買ったパンはコインロッカーの荷物と一緒に</li></ul>
 <div style="background: #FFF4F7; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市浪速区難波中2-3-18（南海なんば駅すぐ）</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=SAKImoto+Bakery+大阪初號本店" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
-<div style="display: flex; gap: 12px; align-items: center">
-<div style="width: 50px; flex-shrink: 0; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">16:30</div>
-<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #4A3F57">南海なんば → 粉浜（南海本線・普通）</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">16:30</div>
+<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>南海なんば → 粉浜（約10分）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 240円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">南海なんば駅の<b style="color:#3E3350">3階 北改札</b>から入る</li><li style="padding-left: 4px"><b style="color:#3E3350">南海本線（5〜8番のりば／和歌山市・関西空港方面）</b>へ</li><li style="padding-left: 4px">発車案内で<b style="color:#3E3350">「普通」</b>を確認して乗車。粉浜は普通しか止まりません（急行・空港急行・特急は通過）</li><li style="padding-left: 4px">新今宮 → 天下茶屋 → 岸里玉出 → <b style="color:#3E3350">粉浜（4駅目）</b>で下車。お店は駅から徒歩1分</li></ol>
+</div>
 </div>
 <div style="display: flex; gap: 12px">
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">17:00</div>
@@ -114,9 +133,13 @@ button,a{-webkit-tap-highlight-color:transparent}
 <a href="https://www.google.com/maps/search/?api=1&amp;query=濃厚担担麺+BaFIT+粉浜" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
-<div style="display: flex; gap: 12px; align-items: center">
-<div style="width: 50px; flex-shrink: 0; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">17:50</div>
-<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #4A3F57">粉浜 → 長居<br><span style="font-size: 12.5px; color: #5B4F66">タクシーが早め／電車なら南海でなんば → 御堂筋線で長居（35〜40分）</span></div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">17:50</div>
+<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>粉浜 → 長居（チームラボ）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>電車はSuica OK／タクシーは車両によるので乗車時に確認</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">電車 大人 530円（南海240円＋地下鉄290円）</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px"><b style="color:#3E3350">早いのはタクシー</b>。「長居公園のチームラボ（長居植物園）」と伝えればOK</li><li style="padding-left: 4px">電車の場合：粉浜から南海本線の<b style="color:#3E3350">普通 なんば行き</b>で終点なんばへ</li><li style="padding-left: 4px">なんばで<b style="color:#3E3350">御堂筋線 1番線（なかもず方面）</b>に乗り換え</li><li style="padding-left: 4px"><b style="color:#3E3350">長居</b>で下車（なんばから6駅目）。<b style="color:#3E3350">3号出口</b>を出ると目の前が長居公園の入口。案内表示に沿って会場へ</li></ol><div style="margin-top: 8px; font-size: 12.5px; line-height: 1.7; color: #5B4F66">電車だと35〜40分かかります。時間が押していたらタクシーで</div>
+</div>
 </div>
 <div style="display: flex; gap: 12px">
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">19:00</div>
@@ -124,16 +147,16 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="align-self: flex-start; background: #FFFFFF; color: #5A4394; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">HIGHLIGHT ・ 予約済み</div>
 <h3 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 20px; line-height: 1.5; color: #3E3350">チームラボ ボタニカルガーデン 大阪</h3>
 <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>夜の植物園がそのままアート空間に。風や人の動きで作品が変化</li><li>代表作「風の中の散逸する鳥の彫刻群」は必見</li><li>近づくと光と音が変わるサルスベリの作品も</li><li>園内は広いので歩きやすい靴で</li></ul>
-<div style="background: #F8F4FF; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">長居植物園（大阪市東住吉区長居公園1-23）<br>長居駅3号出口を出てすぐが公園入口。案内表示に沿って会場へ</div>
+<div style="background: #F8F4FF; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">長居植物園（大阪市東住吉区長居公園1-23）<br>長居駅3号出口を出てすぐが公園入口</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=チームラボ+ボタニカルガーデン+大阪" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
 <div style="display: flex; gap: 12px">
-<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">20:15</div>
-<div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">TO HOTEL</div>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">なんばで荷物とパンを回収 → ホテルへ</h3>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>長居 → なんば（御堂筋線 約20分）</li><li>余裕があれば551蓬莱 本店で豚まんを（売店 21:30まで）</li><li>宿泊：ホテル京阪 ユニバーサル・タワー</li></ul>
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">20:15</div>
+<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>長居 → なんば → ホテル</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 690円（地下鉄290円＋阪神220円＋JR180円）</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">長居駅から<b style="color:#3E3350">御堂筋線 2番線（千里中央方面）</b>に乗り、<b style="color:#3E3350">なんば</b>で下車（約15分）</li><li style="padding-left: 4px">コインロッカーで荷物とパンを回収（余裕があれば551蓬莱 本店で豚まんも。売店 21:30まで）</li><li style="padding-left: 4px">地下の<b style="color:#3E3350">大阪難波駅</b>から<b style="color:#3E3350">阪神なんば線（尼崎・神戸三宮方面）</b>に乗り、<b style="color:#3E3350">西九条</b>で下車。西九条に止まるか発車案内で確認（普通なら確実）</li><li style="padding-left: 4px">西九条で<b style="color:#3E3350">JRゆめ咲線（桜島行き）</b>に乗り換え、2駅目の<b style="color:#3E3350">ユニバーサルシティ</b>で下車</li><li style="padding-left: 4px">ホテル京阪 ユニバーサル・タワーは駅のすぐそば</li></ol>
 </div>
 </div>
 </section>
@@ -168,31 +191,39 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div class="day" data-day="3" hidden>
 <section style="padding: 32px 20px 8px; display: flex; flex-direction: column; gap: 8px">
 <div style="align-self: flex-start; background: #BFE9D2; color: #3E3350; font-size: 12px; letter-spacing: 0.16em; font-weight: 700; padding: 6px 14px; border-radius: 999px">DAY 3 ・ 10/5 MON</div>
-<h2 style="margin: 4px 0 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 26px; line-height: 1.45; color: #3E3350">朝うどんと縁結び、<br>名物ラーメンで締めくくり</h2>
-<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">梅田・天満の神社めぐりから、泡系鶏白湯ラーメン、チーズとはちみつのカフェへ。十三でみたらし団子を食べて伊丹空港へ。</p>
+<h2 style="margin: 4px 0 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 26px; line-height: 1.45; color: #3E3350">朝うどんと縁結び、<br>ラーメンと大阪城で締めくくり</h2>
+<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">梅田・天満の神社めぐりから、泡系鶏白湯ラーメン、チーズとはちみつのカフェ、大阪城へ。十三でみたらし団子を食べて伊丹空港へ。</p>
 </section>
 <section style="margin: 12px 20px 8px; background: #EAF8F0; border-radius: 22px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 14px; font-weight: 700; color: #2C6E4E">この日のポイント</div>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>荷物は阪急大阪梅田駅のコインロッカーへ。最後に阪急で十三へ向かうので便利です</li><li>うまそうなラーメン屋は行列店。11:00の開店前に並びます</li><li>伊丹空港には17:15ごろ到着予定。余裕をもって行動を</li></ul>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>荷物は阪急大阪梅田駅のコインロッカーへ。最後に阪急で十三へ向かうので便利です</li><li>うまそうなラーメン屋は行列店。11:00の開店前に並びます</li><li>帰りの便は伊丹 19:40発。17:30ごろ空港着で余裕をもって。お土産は空港で買うのがおすすめ</li><li>この日の交通費は大人1人 約1,550円（すべてSuica OK）</li></ul>
 </section>
 <section style="padding: 20px 20px 16px; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; gap: 12px; align-items: center">
-<div style="width: 50px; flex-shrink: 0; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">8:15</div>
-<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #4A3F57">チェックアウト → JRで大阪駅へ<br><span style="font-size: 12.5px; color: #5B4F66">阪急大阪梅田駅のコインロッカーに荷物を預ける</span></div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">8:15</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>ホテル → 大阪駅 → 荷物を預ける</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 200円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">チェックアウトして<b style="color:#3E3350">ユニバーサルシティ駅</b>へ</li><li style="padding-left: 4px"><b style="color:#3E3350">JRゆめ咲線</b>に乗車。「大阪環状線直通 大阪行き」ならそのまま<b style="color:#3E3350">大阪</b>へ</li><li style="padding-left: 4px">直通でない電車（西九条行き）の場合は<b style="color:#3E3350">西九条</b>で<b style="color:#3E3350">大阪環状線 外回り（大阪・京橋方面）</b>に乗り換え</li><li style="padding-left: 4px">大阪駅から<b style="color:#3E3350">阪急大阪梅田駅</b>へ歩き、コインロッカーに荷物を預ける</li></ol>
+</div>
 </div>
 <div style="display: flex; gap: 12px">
-<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">8:30</div>
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">8:50</div>
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #C8EBD8; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #DDF4E8; color: #2C6E4E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">BREAKFAST</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">潮屋 梅田店（新梅田食道街）</h3>
 <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>11時までの「早起きセット」で、うどん＋おにぎりの大阪朝ごはん</li><li>国産素材のだしと自家製麺が自慢の立ち食いうどん</li><li>ラーメンが控えているので軽めに</li></ul>
-<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区角田町9-28 新梅田食道街 味の一番街1F<br>6:40〜23:30・年中無休</div>
+<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区角田町9-28 新梅田食道街 味の一番街1F（JR大阪駅と阪急大阪梅田駅の間）<br>6:40〜23:30・年中無休</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=潮屋+梅田店+新梅田食道街" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #2C6E4E"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
-<div style="display: flex; gap: 12px; align-items: center">
-<div style="width: 50px; flex-shrink: 0; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">9:15</div>
-<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #4A3F57">東梅田 → 南森町（谷町線で1駅）</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">9:20</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>東梅田 → 南森町（1駅・約2分）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 190円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">地下鉄<b style="color:#3E3350">谷町線 東梅田駅</b>へ</li><li style="padding-left: 4px"><b style="color:#3E3350">2番線（大日方面）</b>に乗車</li><li style="padding-left: 4px">次の<b style="color:#3E3350">南森町</b>で下車し、大阪天満宮の案内に沿って徒歩5分</li></ol>
+</div>
 </div>
 <div style="display: flex; gap: 12px">
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">9:30</div>
@@ -205,12 +236,20 @@ button,a{-webkit-tap-highlight-color:transparent}
 </div>
 </div>
 <div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">10:20</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>南森町 → 東梅田 → お初天神</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 190円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px"><b style="color:#3E3350">谷町線 南森町駅 1番線（八尾南方面）</b>に乗車</li><li style="padding-left: 4px">次の<b style="color:#3E3350">東梅田</b>で下車</li><li style="padding-left: 4px">お初天神は東梅田駅から徒歩3分</li></ol>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">10:30</div>
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #C8EBD8; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #DDF4E8; color: #2C6E4E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">LOVE SPOT</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">露天神社（お初天神）</h3>
 <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>「恋人の聖地」に認定された縁結びの神社</li><li>水に浮かべて占う恋みくじ、お初と徳兵衛の絵馬</li><li>ハート型や切り絵の御朱印も人気</li></ul>
-<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区曽根崎2-5-4（東梅田駅 徒歩3分）<br>南森町 → 東梅田は谷町線で戻ります</div>
+<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区曽根崎2-5-4（東梅田駅 徒歩3分）</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=露天神社+お初天神" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #2C6E4E"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
@@ -219,7 +258,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #C8EBD8; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #DDF4E8; color: #2C6E4E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">LUNCH ・ RAMEN</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">うまそうなラーメン屋</h3>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>名物は泡立てた鶏白湯の「脳好クリーミーラーメン」</li><li>食べ終わったら〆の炙りチーズリゾットまで</li><li>行列店なので11:00の開店前に並ぶ。食券制</li></ul>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>お初天神から東へ歩いて向かい、11:00の開店前に並ぶ</li><li>名物は泡立てた鶏白湯の「脳好クリーミーラーメン」</li><li>食べ終わったら〆の炙りチーズリゾットまで</li></ul>
 <div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区太融寺町2-21 ニュープラザビルB1F（東梅田駅 徒歩7分）<br>11:00〜15:00 ／ 18:00〜21:00・定休日なし</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=うまそうなラーメン屋+太融寺町" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #2C6E4E"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
@@ -230,41 +269,73 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="align-self: flex-start; background: #FFFFFF; color: #5A4394; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">SWEETS</div>
 <h3 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 20px; line-height: 1.5; color: #3E3350">チーズと生はちみつ BeNe 梅田NU茶屋町</h3>
 <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>8種類のチーズと3種類のはちみつを食べ比べ</li><li>入口の子牛のオブジェが目印。一緒に写真を</li><li>ラーメンの後なのでデザート感覚で</li></ul>
-<div style="background: #F8F4FF; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区茶屋町10-12 NU茶屋町9F<br>平日ランチ 11:00〜15:00</div>
+<div style="background: #F8F4FF; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市北区茶屋町10-12 NU茶屋町9F（阪急大阪梅田駅 徒歩3分）<br>平日ランチ 11:00〜15:00</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=チーズと生はちみつ+BeNe+梅田NU茶屋町" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
-<div style="display: flex; gap: 12px; align-items: center">
-<div style="width: 50px; flex-shrink: 0; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">14:30</div>
-<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #4A3F57">茶屋町・梅田で自由時間<br><span style="font-size: 12.5px; color: #5B4F66">お買い物やお土産探しに</span></div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">14:00</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>茶屋町 → 大阪城公園（約25分）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 180円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">NU茶屋町から<b style="color:#3E3350">JR大阪駅</b>まで歩く（約10分）</li><li style="padding-left: 4px"><b style="color:#3E3350">大阪環状線 外回り（京橋・鶴橋方面）</b>に乗車。反対回り（内回り）だと30分以上かかるので注意</li><li style="padding-left: 4px">4駅目の<b style="color:#3E3350">大阪城公園</b>で下車（約9分）</li></ol>
+</div>
 </div>
 <div style="display: flex; gap: 12px">
-<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">15:30</div>
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">14:30</div>
+<div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #C8EBD8; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="align-self: flex-start; background: #DDF4E8; color: #2C6E4E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">CASTLE ・ PHOTO</div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">大阪城公園（天守閣の外観）</h3>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>大阪城ホールの横を通り、東外堀沿いを歩いて青屋門へ</li><li>青屋門を越えた先の<b style="color:#3E3350">極楽橋</b>から、堀越しに天守閣を撮るのが定番</li><li>天守閣の真下まで行って外観を見学（中には入らず外観だけ）</li><li>時間に余裕があれば、公園内の豊國神社にも立ち寄れます</li></ul>
+<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市中央区大阪城1-1（大阪城公園駅から天守閣まで徒歩約15〜20分）<br>公園の散策は無料</div>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=大阪城天守閣" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #2C6E4E"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">15:30</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>大阪城公園 → 大阪 → 阪急大阪梅田</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 180円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px"><b style="color:#3E3350">大阪城公園駅</b>から<b style="color:#3E3350">大阪環状線（京橋経由 大阪方面）</b>に乗り、<b style="color:#3E3350">大阪</b>で下車（約10分）</li><li style="padding-left: 4px">JR大阪駅から阪急大阪梅田駅へ歩き、コインロッカーで荷物を回収</li></ol>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">16:05</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>阪急大阪梅田 → 十三（1駅・約3分）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 170円</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">阪急大阪梅田駅の<b style="color:#3E3350">宝塚線（4〜6号線）</b>から乗車</li><li style="padding-left: 4px">次の<b style="color:#3E3350">十三</b>で下車。<b style="color:#3E3350">西改札</b>を出てすぐのアーケード街へ</li></ol>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">16:15</div>
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #C8EBD8; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
 <div style="align-self: flex-start; background: #DDF4E8; color: #2C6E4E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">WAGASHI</div>
 <h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">喜八洲総本舗 本店（十三）</h3>
 <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>注文後に焼き上げる、焼きたてのみたらし団子</li><li>焦げ目は「多め・普通・少なめ」から選べます</li><li>名物の酒饅頭もおすすめ</li></ul>
-<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市淀川区十三本町1-4-2（阪急十三駅 西口すぐ）<br>梅田から阪急で1駅・営業時間は事前に確認</div>
+<div style="background: #F2FBF6; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">大阪市淀川区十三本町1-4-2（阪急十三駅 西口すぐ）<br>営業時間は事前に確認</div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=喜八洲総本舗+本店+十三" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #2C6E4E"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
 </div>
 </div>
-<div style="display: flex; gap: 12px; align-items: center">
-<div style="width: 50px; flex-shrink: 0; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">16:30</div>
-<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #4A3F57">十三 → 阪急宝塚線で蛍池 → モノレールで伊丹空港<br><span style="font-size: 12.5px; color: #5B4F66">17:15ごろ空港着</span></div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">17:00</div>
+<div style="flex-grow: 1; border: 2px dashed #A6DBBF; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>十三 → 蛍池 → 伊丹空港（約30分）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>Suica OK</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">大人 440円（阪急240円＋モノレール200円）</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">十三駅の<b style="color:#3E3350">宝塚線ホーム</b>から<b style="color:#3E3350">急行 宝塚行き</b>（または普通 宝塚方面）に乗車</li><li style="padding-left: 4px"><b style="color:#3E3350">蛍池</b>で下車（急行なら十三から約10分）</li><li style="padding-left: 4px">改札を出て<b style="color:#3E3350">大阪モノレール 蛍池駅</b>へ。<b style="color:#3E3350">大阪空港行き</b>に乗り、1駅で終点<b style="color:#3E3350">大阪空港</b>（17:30ごろ着）</li></ol>
+</div>
 </div>
 <div style="display: flex; gap: 12px">
-<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">19:00</div>
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">19:40</div>
 <div style="flex-grow: 1; background: #EAF8F0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 20px; line-height: 1.5; color: #3E3350">伊丹空港 出発</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #4A3F57">おつかれさまでした。気をつけて帰りましょう！</p>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #4A3F57">空港でお土産を見ながらゆっくり。おつかれさまでした、気をつけて帰りましょう！</p>
 </div>
 </div>
 </section>
 <div style="padding: 8px 20px 24px; display: flex; justify-content: center"><button type="button" data-go="1" style="min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #A6DBBF; background: #BFE9D2; color: #3E3350; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer">1日目に戻る</button></div>
 </div>
-
-<footer style="margin: 0 20px 96px; padding: 18px; border-top: 1.5px dashed #E4D7F2; font-size: 12px; line-height: 1.8; color: #5B4F66">営業時間などは2026年9月時点で調べた情報です。お出かけ前に各店の最新情報をご確認ください。</footer>
-
+<footer style="margin: 0 20px 96px; padding: 18px; border-top: 1.5px dashed #E4D7F2; font-size: 12px; line-height: 1.8; color: #5B4F66">営業時間・時刻・運賃などは2026年9月時点で調べた情報です。お出かけ前に各店・各交通機関の最新情報をご確認ください。</footer>
 </div>
 </div>
 <a href="#top" class="totop" aria-label="一番上に戻る"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="M5 12l7-7 7 7"></path></svg></a>
