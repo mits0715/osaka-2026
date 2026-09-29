@@ -19,6 +19,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .daybtn[data-go="1"]{--on:#FFC9DA;--edge:#E893AE}
 .daybtn[data-go="2"]{--on:#C7DDFB;--edge:#8FB4E6}
 .daybtn[data-go="3"]{--on:#BFE9D2;--edge:#86C9A5}
+.daybtn[data-go="4"]{--on:#E0D4F8;--edge:#B7A3E3}
 .day[hidden]{display:none}
 .totop{position:fixed;right:16px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:52px;height:52px;border-radius:999px;background:#FFFFFF;border:2px solid #D6E8FF;color:#3E3350;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(90,67,148,.18);text-decoration:none}
 @media print{.totop,nav{display:none}.day[hidden]{display:block}}
@@ -32,11 +33,12 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="position: relative; display: flex; flex-direction: column; gap: 14px">
 <div style="font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: #9C3A5E">OSAKA GIRLS TRIP</div>
 <h1 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 34px; line-height: 1.35; color: #3E3350">大阪 2泊3日<br>旅のしおり</h1>
-<div style="font-size: 15px; line-height: 1.7; color: #4A3F57">2026年10月3日（土）〜10月5日（月）<br>伊丹 9:10着 ／ 伊丹 19:40発</div>
-<nav aria-label="日程の切り替え" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-top: 6px">
+<div style="font-size: 15px; line-height: 1.7; color: #4A3F57">2026年10月3日（土）〜10月5日（月）<br>仙台 7:50発 → 伊丹 9:10着<br>伊丹 19:40発 → 仙台</div>
+<nav aria-label="日程の切り替え" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding-top: 6px">
 <button type="button" class="daybtn" data-go="1" aria-pressed="true"><span style="font-size: 15px; font-weight: 700">1日目</span><span style="font-size: 12px">10/3 土</span></button>
 <button type="button" class="daybtn" data-go="2" aria-pressed="false"><span style="font-size: 15px; font-weight: 700">2日目</span><span style="font-size: 12px">10/4 日</span></button>
 <button type="button" class="daybtn" data-go="3" aria-pressed="false"><span style="font-size: 15px; font-weight: 700">3日目</span><span style="font-size: 12px">10/5 月</span></button>
+<button type="button" class="daybtn" data-go="4" aria-pressed="false"><span style="font-size: 15px; font-weight: 700">お土産</span><span style="font-size: 12px">リスト</span></button>
 </nav>
 </div>
 </header>
@@ -44,13 +46,39 @@ button,a{-webkit-tap-highlight-color:transparent}
 <section style="padding: 32px 20px 8px; display: flex; flex-direction: column; gap: 8px">
 <div style="align-self: flex-start; background: #FFC9DA; color: #3E3350; font-size: 12px; letter-spacing: 0.16em; font-weight: 700; padding: 6px 14px; border-radius: 999px">DAY 1 ・ 10/3 SAT</div>
 <h2 style="margin: 4px 0 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 26px; line-height: 1.45; color: #3E3350">熟成ステーキと道頓堀、<br>夜は光の植物園へ</h2>
-<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">朝のすいている道頓堀で写真を撮ってからランチ。夕方は粉浜で担担麺、19時からチームラボ ボタニカルガーデンへ。</p>
+<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">朝いちばんの便で仙台から大阪へ。すいている道頓堀で写真を撮ってからランチ。夕方は粉浜で担担麺、19時からチームラボ ボタニカルガーデンへ。</p>
 </section>
 <section style="margin: 12px 20px 8px; background: #FFF0F5; border-radius: 22px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 14px; font-weight: 700; color: #9C3A5E">この日のポイント</div>
-<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>伊丹空港 9:10着。リムジンバスは9:30発に乗れればベスト（乗り遅れても9:50発あり）</li><li>この日は伊丹空港で「空の日エアポートフェスティバル」開催。空港が混むかもしれないので早めに移動</li><li>BaFITは予約不可・11席。17:00ちょうどに着くのが勝負</li><li>この旅の電車・バスはすべてSuicaで乗れます（緑の「Suica OK」マーク）。この日の交通費は大人1人 約2,190円（粉浜→長居を電車で移動した場合）。残高は多めにチャージしておくと安心</li></ul>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>仙台空港 7:50発の便に乗るため、自宅を5:50に出発（車）</li><li>伊丹空港 9:10着。リムジンバスは9:30発に乗れればベスト（乗り遅れても9:50発あり）</li><li>この日は伊丹空港で「空の日エアポートフェスティバル」開催。空港が混むかもしれないので早めに移動</li><li>BaFITは予約不可・11席。17:00ちょうどに着くのが勝負</li><li>この旅の電車・バスはすべてSuicaで乗れます（緑の「Suica OK」マーク）。この日の交通費は大人1人 約2,190円（粉浜→長居を電車で移動した場合）。残高は多めにチャージしておくと安心</li></ul>
 </section>
 <section style="padding: 20px 20px 16px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 14px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">5:50</div>
+<div style="flex-grow: 1; border: 2px dashed #F4B9CB; border-radius: 18px; padding: 12px 16px; background: #FFFFFF">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #3E3350"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>自宅 → 仙台空港（車・約1時間）</div>
+<div style="margin-top: 6px; display: inline-flex; align-self: flex-start; align-items: center; gap: 5px; background: #E6F7EE; color: #22603F; border: 1.5px solid #A6DBBF; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M7 14h4"></path></svg>車・ETC</div><div style="margin-top: 6px; margin-left: 6px; display: inline-flex; align-items: center; gap: 5px; background: #FFF4E0; color: #7A4B12; border: 1.5px solid #F2D29B; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px">高速 1,510円（ETC休日割引なら1,060円）</div>
+<ol style="margin: 8px 0 0; padding-left: 20px; font-size: 13.5px; line-height: 1.75; color: #4A3F57"><li style="padding-left: 4px">自宅を出発し、<b style="color:#3E3350">東北道 泉IC</b>から高速へ</li><li style="padding-left: 4px"><b style="color:#3E3350">富谷JCT</b>で<b style="color:#3E3350">仙台北部道路</b>、<b style="color:#3E3350">利府JCT</b>で<b style="color:#3E3350">三陸沿岸道路</b>へ</li><li style="padding-left: 4px"><b style="color:#3E3350">仙台港北IC</b>から<b style="color:#3E3350">仙台東部道路</b>を南へ進み、<b style="color:#3E3350">仙台空港IC</b>で降りる</li><li style="padding-left: 4px">空港の公式駐車場（1A・1B・2、予約した場合は1R）にとめる</li></ol><div style="margin-top: 8px; font-size: 12.5px; line-height: 1.7; color: #5B4F66">泉IC→仙台空港ICは約31〜40分。早朝で道はすいている想定ですが、余裕をもって15分ほど早めの出発にしています</div>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">6:50</div>
+<div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">PARKING</div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">仙台空港 公式駐車場</h3>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>ターミナルから徒歩数分。ゲートや駐車券のないキャッシュレス方式</li><li>土日月は「多客期」で、24時間ごとの最大料金は1,600円</li><li>3日間とめると目安は最大4,800円ほど</li><li>1R駐車場は事前予約ができるので、満車が心配なら予約を</li></ul>
+<div style="background: #FFF4F7; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">精算は精算機（現金・クレジットカード・電子マネー）で</div>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=仙台空港駐車場" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #A83E63"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>地図を開く</a>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">7:00</div>
+<div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="align-self: flex-start; background: #FFE3EC; color: #9C3A5E; font-size: 11px; letter-spacing: 0.12em; font-weight: 700; padding: 4px 10px; border-radius: 999px">DEPARTURE</div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">仙台空港 7:50発 → 伊丹空港へ</h3>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>チェックイン・手荷物の預け入れを済ませて保安検査場へ</li><li>出発の20分前までには保安検査を通過しておく</li><li>伊丹空港には9:10に到着予定</li></ul>
+</div>
+</div>
 <div style="display: flex; gap: 12px">
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #B0476E">9:10</div>
 <div style="flex-grow: 1; background: #FFFFFF; border: 1.5px solid #FFD3E0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
@@ -329,11 +357,75 @@ button,a{-webkit-tap-highlight-color:transparent}
 <div style="width: 50px; flex-shrink: 0; padding-top: 18px; font-family: 'Kiwi Maru', serif; font-size: 16px; color: #2F7652">19:40</div>
 <div style="flex-grow: 1; background: #EAF8F0; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 20px; line-height: 1.5; color: #3E3350">伊丹空港 出発</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #4A3F57">空港でお土産を見ながらゆっくり。おつかれさまでした、気をつけて帰りましょう！</p>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #4A3F57">空港でお土産を見ながらゆっくり。仙台空港に着いたら、駐車場で精算して車で自宅へ。おつかれさまでした、気をつけて帰りましょう！</p>
 </div>
 </div>
 </section>
-<div style="padding: 8px 20px 24px; display: flex; justify-content: center"><button type="button" data-go="1" style="min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #A6DBBF; background: #BFE9D2; color: #3E3350; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer">1日目に戻る</button></div>
+<div style="padding: 8px 20px 24px; display: flex; justify-content: center"><button type="button" data-go="4" style="min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #A6DBBF; background: #BFE9D2; color: #3E3350; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer">お土産リストを見る</button></div>
+</div>
+<div class="day" data-day="4" hidden>
+<section style="padding: 32px 20px 8px; display: flex; flex-direction: column; gap: 8px">
+<div style="align-self: flex-start; background: #E0D4F8; color: #3E3350; font-size: 12px; letter-spacing: 0.16em; font-weight: 700; padding: 6px 14px; border-radius: 999px">SOUVENIR LIST</div>
+<h2 style="margin: 4px 0 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 26px; line-height: 1.45; color: #3E3350">お土産リスト</h2>
+<p style="margin: 4px 0 0; font-size: 14px; line-height: 1.85; color: #5B4F66">空港で買えるものは、3日目に伊丹空港でまとめて買います。決まったものから追加していきます。</p>
+</section>
+<section style="padding: 16px 20px 8px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Kiwi Maru', serif; font-weight: 500; font-size: 20px; color: #3E3350">伊丹空港でまとめて買う</h3>
+<div style="background: #F3EEFD; border-radius: 22px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 15px; font-weight: 700; color: #5A4394">関西旅日記（伊丹空港 中央ブロック2階）</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>営業時間 6:30〜21:00。保安検査の前のエリアにあるお店です</li><li>3日目は17:30ごろ空港着なので、出発までにゆっくり選べます</li><li>ネット予約は来店の4日前〜前日15時まで。当日は優先レジで受け取れます</li></ul>
+<a href="https://www.kansaitabinikki.jp/itm" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>予約サイト（伊丹空港の商品一覧）</a>
+</div>
+</section>
+<section style="padding: 12px 20px 16px; display: flex; flex-direction: column; gap: 18px">
+<div style="background: #FFFFFF; border: 1.5px solid #E2D7F7; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">決定</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">空港限定</span></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">空港限定 いかから揚げせんべい（ラー油）</h3>
+<div style="font-size: 13px; color: #5B4F66; margin-top: -4px">越前海鮮倶楽部</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>「いかげそ・なんこつ」を75%使った海鮮せんべい</li><li>いかを姿のまま鉄板で焼いてから、カラッと揚げた一品</li><li>うま辛ラー油をしみ込ませた大阪の空港限定フレーバー</li><li>おやつにも、おつまみにも</li></ul>
+<div style="background: #F8F5FE; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">内容量 30g ・ 賞味期限 製造から120日 ・ 常温保存<br>特定原材料等：小麦・大豆・いか・ごま</div>
+<div style="display: flex; align-items: flex-start; gap: 8px; background: #EEF5FF; border-radius: 14px; padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #2F4F7A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>買える場所</b>：伊丹空港 関西旅日記（中央ブロック2階）</span></div>
+<a href="https://www.kansaitabinikki.jp/i/D4944758006876" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>商品ページを開く</a>
+</div>
+<div style="background: #FFFFFF; border: 1.5px solid #E2D7F7; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">決定</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">大阪らしい</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">個包装</span></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">たこパティエ（12本入・24本入）</h3>
+<div style="font-size: 13px; color: #5B4F66; margin-top: -4px">瓢月堂</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>ソース・青のり・鰹節のたこ焼き味に、クルミやキャラメリゼを合わせたパイ菓子</li><li>最初はたこ焼き味、最後は甘いスイーツになる不思議な味の変化</li><li>一口サイズで配りやすい。人数に合わせて12本入と24本入を使い分け</li></ul>
+<div style="background: #F8F5FE; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">12本入：777円（税込）・約160g<br>24本入：1,555円（税込）・約280g<br>賞味期限 製造から60日（受け取り日から10日以上） ・ 常温保存<br>特定原材料等：小麦・卵・乳・くるみ・さば・大豆・鶏肉・桃・りんご</div>
+<div style="display: flex; align-items: flex-start; gap: 8px; background: #EEF5FF; border-radius: 14px; padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #2F4F7A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>買える場所</b>：伊丹空港 関西旅日記（中央ブロック2階）</span></div>
+<a href="https://www.kansaitabinikki.jp/i/D4942809075116" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>12本入の商品ページ</a><a href="https://www.kansaitabinikki.jp/i/D4942809075123" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>24本入の商品ページ</a>
+</div>
+<div style="background: #FFFFFF; border: 1.5px solid #E2D7F7; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">決定</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">個包装</span></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">大阪花ラング 9個入</h3>
+<div style="font-size: 13px; color: #5B4F66; margin-top: -4px">あみだ池大黒</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>発酵バターとメレンゲで仕上げた、サクサク食感のラングドシャ</li><li>大阪の養蜂場で採れた3種類以上のはちみつをブレンドしたクリーム</li><li>花の形がかわいい、大阪土産の新定番</li></ul>
+<div style="background: #F8F5FE; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">内容量 9個 ・ 賞味期限 製造から45日（受け取り日から7日以上） ・ 常温保存<br>特定原材料等：小麦・乳・卵・大豆<br>はちみつ使用のため、1歳未満の乳児には与えないでください</div>
+<div style="display: flex; align-items: flex-start; gap: 8px; background: #EEF5FF; border-radius: 14px; padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #2F4F7A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>買える場所</b>：伊丹空港 関西旅日記（中央ブロック2階）</span></div>
+<a href="https://www.kansaitabinikki.jp/i/D4966065515650" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>商品ページを開く</a>
+</div>
+<div style="background: #FFFFFF; border: 1.5px solid #E2D7F7; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">決定</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">大阪産（もん）名品</span></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">とら吉クリームサンド 4個入</h3>
+<div style="font-size: 13px; color: #5B4F66; margin-top: -4px">浪速育松月</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>張り子の虎の形をした、かわいいトラ最中</li><li>パリパリの最中皮に、きなこクリームとごまクリームの2種類</li><li>サクサク・カリカリのクリスピー食感</li></ul>
+<div style="background: #F8F5FE; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">内容量 きなこ2個・ごま2個 ・ 常温保存<br>賞味期限 製造から28日（受け取り日から5日以上）<br>特定原材料等：乳成分・ごま・大豆</div>
+<div style="display: flex; align-items: flex-start; gap: 8px; background: #EEF5FF; border-radius: 14px; padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #2F4F7A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>買える場所</b>：伊丹空港 関西旅日記（中央ブロック2階）</span></div>
+<a href="https://www.kansaitabinikki.jp/i/D4595121745023" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>商品ページを開く</a>
+</div>
+<div style="background: #FFFFFF; border: 1.5px solid #E2D7F7; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">決定</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">大阪産（もん）</span><span style="background: #FFE3EC; color: #9C3A5E; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px">日持ち短め</span></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; color: #3E3350">みたらし小餅 12個入</h3>
+<div style="font-size: 13px; color: #5B4F66; margin-top: -4px">千鳥屋宗家</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; color: #3E3350"><li>たれをお餅で包んだ、つまめるみたらし団子。外はもちっ、中はとろ〜り</li><li>国産の米粉・砂糖・水で作る、1989年からの元祖の味</li><li>日持ちが短いので、配るのは帰った翌日までに</li></ul>
+<div style="background: #F8F5FE; border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.75; color: #5B4F66">内容量 12個（350g） ・ 常温保存<br>賞味期限 製造から3日（受け取り日から2日以上）<br>特定原材料等：大豆・小麦・乳<br>ネット予約の場合、伊丹空港での受け取りは10:30から</div>
+<div style="display: flex; align-items: flex-start; gap: 8px; background: #EEF5FF; border-radius: 14px; padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #2F4F7A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>買える場所</b>：伊丹空港 関西旅日記（中央ブロック2階）</span></div>
+<a href="https://www.kansaitabinikki.jp/i/D4511732180862" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: #5A4394"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>商品ページを開く</a>
+</div>
+<div style="border: 2px dashed #C9B8EE; border-radius: 22px; padding: 18px; font-size: 14px; line-height: 1.7; color: #5B4F66; text-align: center">ほかのお土産は調べ中。決まったら追加します</div>
+</section>
+<div style="padding: 8px 20px 24px; display: flex; justify-content: center"><button type="button" data-go="1" style="min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #C9B8EE; background: #E0D4F8; color: #3E3350; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer">1日目に戻る</button></div>
 </div>
 <footer style="margin: 0 20px 96px; padding: 18px; border-top: 1.5px dashed #E4D7F2; font-size: 12px; line-height: 1.8; color: #5B4F66">営業時間・時刻・運賃などは2026年9月時点で調べた情報です。お出かけ前に各店・各交通機関の最新情報をご確認ください。</footer>
 </div>
@@ -354,7 +446,7 @@ button,a{-webkit-tap-highlight-color:transparent}
     if (!t) return;
     go(t.getAttribute('data-go'), true);
   });
-  var m = location.hash.match(/^#day([123])$/);
+  var m = location.hash.match(/^#day([1234])$/);
   if (m) go(m[1], false);
 })();
 </script>
